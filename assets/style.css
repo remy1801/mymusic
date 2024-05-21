@@ -78,3 +78,68 @@ body {
     color: #ffffff;
 }
 
+.main-container {
+    margin-left: 200px;
+    margin-bottom: 100px;
+    border-style: solid;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    border-width: 1px;
+    border-color: #E7E3FC3B;
+}
+
+.main-container .topbar {
+    display: flex;
+    align-items: center;
+    background-color: #3D3759;
+    padding: 14px 50px;
+    height: 40px;
+    gap: 2rem;
+}
+
+.main-container .topbar .search {
+    display: flex;
+    align-items: center;
+    background-color: #E7E3FC0A;
+    padding: 8px 16px;
+    border-radius: 40px;
+    width: 980px;
+}
+
+.main-container .topbar .search-icon {
+    font-size: 1.18rem;
+    color: #C1C2C4;
+}
+
+.main-container .topbar .search-input .input {
+    border: none;
+    outline: none;
+    background-color: transparent;
+    padding: 8px;
+    font-weight: bold;
+    width: 930px;
+    color: #C1C2C4;
+}
+
+.main-container .topbar .akun {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    align-content: center;
+    gap: 1.2rem;
+    color: #C1C2C4;
+}
+
+.main-container .topbar .akun .notification {
+    font-size: .7rem;
+    color: #C1C2C4;
+    padding: 11px;
+    border-style: solid;
+    border-radius: 5px;
+    border-width: .5px;
+}
+
+.main-container .topbar .akun img {
+    width: 40px;
+}
