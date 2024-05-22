@@ -180,6 +180,7 @@ body {
 .google-login-btn:hover {
     width: 340px;
     background-color: #ff8000e8;
+    color: black;
 }
 
 .login-btn {
@@ -200,8 +201,7 @@ body {
     width: 20px;
 }
 
-/* Responsive styles */
-@media (max-width: 768px) {
+@media (max-width: 600px) {
     .navbar {
         display: flex;
         justify-content: center;

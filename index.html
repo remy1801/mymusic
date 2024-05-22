@@ -6,11 +6,11 @@
     <title>My Music</title>
     <link rel="stylesheet" href="assets/style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Quicksand:wght@500;700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Quicksand:wght@500;700&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/png" href="assets/img/mymusicicon.png">
 </head>
 <body>
-
     <div class="sidebar">
         <div class="menu">
             <ul>
@@ -107,6 +107,9 @@
                 <img src="assets/img/logo-mymusic.png" alt="Logo"/>
             </a>
         </div>
+        <div class="hamburger" onclick="toggleSidebar()">
+            <i class="fas fa-bars"></i>
+        </div>
         <div class="search">
             <div class="search-icon">
                 <i class="fas fa-search"></i>
@@ -120,7 +123,9 @@
             <div class="notification">
                 <span class="fa fa-bell"></span>
             </div>
-            <img src="assets/img/Avatar.png" alt="akun">
+            <a href="./login.html">
+                <img src="assets/img/Avatar.png" alt="akun">
+            </a>
             <span>Hi, Jennie</span>
         </div>
     </nav>
@@ -326,9 +331,6 @@
                 </div>
             </div>
         </div>
-        
-
-
 
         <div class="judul">
             <h2>Frequently Played Artist</h2>
@@ -383,15 +385,17 @@
             </div>
         </div>
 
-
         <footer class="foter">
             <img src="assets/img/footer.png" alt="lagu diputar">
         </footer>
     </div>
 
-
-
-
+    <script> //script untuk sidebar
+        function toggleSidebar() {
+            const sidebar = document.querySelector('.sidebar');
+            sidebar.classList.toggle('active');
+        }
+    </script>
 
     <script
         src="https://kit.fontawesome.com/23cecef777.js"

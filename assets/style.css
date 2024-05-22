@@ -163,6 +163,25 @@ body {
     margin: 0;
 }
 
+.hamburger {
+    display: none;
+    cursor: pointer;
+    font-size: 23px;
+    color: #ffffff;
+}
+
+.sidebar.active {
+    display: block;
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    width: 200px;
+    background-color: #3D3759;
+    padding: 60px 15px 15px 15px;
+    z-index: 1001;
+}
+
 .main-container {
     margin-left: 200px;
     margin-top: 60px;
@@ -241,10 +260,12 @@ body {
     border-radius: 5px;
     border-width: .5px;
     background-color: #474655;
+    cursor: pointer;
 }
 
 .topbar .akun img {
     width: 40px;
+    cursor: pointer;
 }
 
 .judul {
@@ -386,9 +407,14 @@ body {
     border-color: #E7E3FC3B;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 600px) {
     .sidebar {
         display: none;
+    }
+
+    .hamburger {
+        display: block;
+        padding: 60px;
     }
 
     .main-container {
