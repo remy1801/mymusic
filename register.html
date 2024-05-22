@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Login - MyMusic</title>
-    <link rel="stylesheet" href="assets/login.css">
+    <title>Register - MyMusic</title>
+    <link rel="stylesheet" href="assets/register.css">
 </head>
 <body>
     <header class="navbar">
@@ -22,34 +22,39 @@
                         <img src="assets/img/logo-mymusic.png" alt="Logo"/>
                     </a>
                 </div>
-                <h2>Welcome to MyMusic!👋</h2>
-                <p>Please sign-in to your account and start the adventure</p>
+                <h2>Adventure starts here!👋</h2>
+                <p>Make your listening experience easy and fun!</p>
             </div>
             <form>
+                <div class="form-group">
+                    <input type="name" id="name" name="email" placeholder="Name" required>
+                </div>
                 <div class="form-group">
                     <input type="email" id="email" name="email" placeholder="Email" required>
                 </div>
                 <div class="form-group">
                     <input type="password" id="password" name="password" placeholder="Password" required>
                 </div>
+                <div class="form-group">
+                    <input type="password" id="password" name="password" placeholder="Confirm Password" required>
+                </div>
                 <div class="form-group remember-me">
                     <div class="remember-me-container">
-                        <input type="checkbox" id="remember" name="remember">
-                        <label for="remember">Remember me</label>
+                        <input type="checkbox" id="remember" name="remember" required>
+                        <label for="remember">I agree to privacy policy & terms</label>
                     </div>
-                    <a href="#" class="forgot-password">Forgot password?</a>
                 </div>
                 <div class="form-group">
-                    <button type="submit" class="login-btn">Login</button>
+                    <button type="submit" class="login-btn">Sign Up</button>
                 </div>
                 <div class="form-group">
-                    <p style="color: #C1C2C4;">New on our platform? <a href="#" class="create-account">Create an account</a></p>
+                    <p style="color: #C1C2C4;">Already have an account? <a href="#" class="create-account">Sign in</a></p>
                 </div>
                 <div class="divider">
                     <span>or</span>
                 </div>
                 <div class="form-group">
-                    <button type="button" class="google-login-btn"><img src="assets/img/google.png"> Login with Google</button>
+                    <button type="button" class="google-login-btn"><img src="assets/img/google.png"> Sign Up with Google</button>
                 </div>
             </form>
         </div>

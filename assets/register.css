@@ -75,6 +75,7 @@ body {
     text-align: center;
 }
 
+.form-group input[type="name"],
 .form-group input[type="email"],
 .form-group input[type="password"] {
     width: 100%;
@@ -86,6 +87,7 @@ body {
     font-size: 15px;
 }
 
+.form-group input[type="name"]::placeholder,
 .form-group input[type="email"]::placeholder,
 .form-group input[type="password"]::placeholder {
     color: #cccccc;
@@ -97,7 +99,6 @@ body {
     justify-content: space-between;
     align-items: center;
     color: #C1C2C4;
-    font-size: 13px;
 }
 
 .remember-me-container {
@@ -112,7 +113,7 @@ body {
 .forgot-password {
     color: #F7A701;
     text-decoration: none;
-    font-size: 13px;
+    font-size: 0.9rem;
 }
 
 .forgot-password:hover {
